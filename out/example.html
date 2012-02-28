@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Example presentation</title><link href="../templates/basic/style.css" rel="stylesheet" type="text/css"><link href="../templates/basic/basic-animations.min.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="../templates/basic/jquery.min.js"></script><script type="text/javascript" src="../templates/basic/jmpress.all.js"></script><script type="text/javascript" src="../templates/basic/script.js"></script></head><body><div id="jmpress" data-template="main"><section data-template="title" class="title"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>1</td></tr></table></footer><h1>Example presentation<br/><small>for <a href="http://shama.github.com/jmpress.js">jmpress.js</a> with <a href="http://sokra.github.com/YamYam">YamYam</a></small></h1><p>Have fun using it!</p><p>Note: If you are new to jmpress.js presentations: Try to nativgate with arrow keys or spacebar.</p>
+</section><section data-template="subtitle" class="subtitle"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>2</td></tr></table></footer><h1>Introduction</h1>
+</section><section data-template="page" class="page"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>3</td></tr></table></footer><h1>What is it?</h1><p>YamYam-jmpress is a simple building tool which makes a jmpress.js presentation from a YamYam markdown while using a template.</p><p>It makes it easy to create a cool presentation while writing only in a simple markdown language.</p><h2>Example</h2><p>See <a href="http://github.com/sokra/YamYam-jmpress/blob/master/src/example.yam">markdown</a> of this file for example.<br/>Or next pages...</p>
+</section><section data-template="page" class="page"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>4</td></tr></table></footer><h1>Reasons</h1><ul><li>HTML is such a noise language and i wanted to concentrate on the content.</li><li>Design such be the same on all pages and presentations and it should be easy exchangeable</li><li>...</li></ul>
+</section><section data-template="subtitle" class="subtitle"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>5</td></tr></table></footer><h1>Markdown</h1><h2>Works with YamYam</h2><p>see <a href="http://github.com/sokra/YamYam">sokra/YamYam</a></p>
+</section><section data-template="page" class="page"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>6</td></tr></table></footer><h1>Basic Syntax</h1><h2>Headlines and Text</h2><div><pre># Page Headline<br/><br/>## Subheadline<br/>with a subtext<br/><br/>### Subsubheadline<br/><br/>Start of paragraph<br/>Some *accented* text. And _more_ of **this** __cool accents__.<br/>End of paragraph<br/><br/>Next paragraph<br/><br/>* list item<br/> * *light accented item*<br/> * __strong accented item__<br/>* `code item`</pre><p></p></div><p>See this in action on next page...</p>
+</section><section data-template="page" class="page"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>7</td></tr></table></footer><h1>Page Headline</h1><h2>Subheadline<br/><small>with a subtext</small></h2><h3>Subsubheadline</h3><p>Start of paragraph<br/>Some <em>accented</em> text. And <em>more</em> of <strong>this</strong> <strong>cool accents</strong>.<br/>End of paragraph</p><p>Next paragraph</p><ul><li>list item<ul><li><em>light accented item</em></li><li><strong>strong accented item</strong></li></ul></li><li><code>code item</code></li></ul>
+</section><section data-template="page" class="page"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>8</td></tr></table></footer><h1>Page Structure</h1><div><pre>[@settings template=&quot;basic" output="&lt;output file name&gt;"]<br/>[@settings author=&quot;&lt;Your Name&gt;" date="<Your Date>" copyright="<Your Copyright>"]<br/>[@settings title=&quot;&lt;Your Title&gt;"]<br/>[title]<br/><br/>... The first slide<br/><br/>[subtitle]<br/><br/>... A title slide<br/><br/>[page]<br/><br/>... A simple slide<br/><br/>[page]<br/><br/>... Another simple slide<br/><br/>[end]<br/><br/>... Thanks for...</pre><p></p></div>
+</section><section data-template="page" class="page"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>9</td></tr></table></footer><h1>Customizing</h1><p>If you want to make your own template, simply copy <code>basic.dust.html</code> and the <code>basic</code> folder in <code>templates/</code> and rename the copies.<br/>In your markdown file you can specify your own template.</p><p>The template is really short and should be easy to understand and extend.</p><p>Feel free to modify the files to your needs.</p><h2>Contribute</h2><p>If you want to contribute your template to the community, feel free to send it as pull request.</p>
+</section><section data-template="page" class="page"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>10</td></tr></table></footer><h1>Advanced</h1><h2>Animations</h2><p>There is support for custom animation</p><div><pre>[@jmpress animation=&quot;fade"]<br/>Delayed Text<br/><br/>[@jmpress animation=&quot;drive-right after 1s"]<br/>Delayed Text2</pre><p></p></div><div class="right"><pre>[@right]<br/>Floating Content</pre><p>Floating Content</p></div><p data-jmpress="fade">Delayed Text</p><p data-jmpress="drive-right after 1s">Delayed Text2</p><p>And custom attributes</p><div><pre>[@attrs style=&quot;color: red"]<br/>Red text</pre><p></p></div><p style="color: red">Red text</p>
+</section><section data-template="end" class="end"><footer><table><tr><td>Example presentation
+<br>2012/02/27
+</td><td>MIT Licence
+<br>Tobias Koppers
+</td><td>11</td></tr></table></footer><h1>Thanks!</h1>
+</section></div></body></html>
