@@ -1,0 +1,188 @@
+[@settings template="basic" output="example"]
+[@settings author="Tobias Koppers" date="2012/02/27" copyright="MIT Licence"]
+[@settings title="Example presentation"]
+[title]
+
+# Example presentation
+for [jmpress.js](http://shama.github.com/jmpress.js) with [YamYam](http://sokra.github.com/YamYam)
+
+Have fun using it!
+
+Note: If you are new to jmpress.js presentations: Try to nativgate with arrow keys or spacebar.
+
+[subtitle]
+
+# Introduction
+
+[page]
+
+# What is it?
+
+YamYam-jmpress is a simple building tool which makes a jmpress.js presentation from a YamYam markdown while using a template.
+
+It makes it easy to create a cool presentation while writing only in a simple markdown language.
+
+## Example
+
+See [markdown](http://github.com/sokra/YamYam-jmpress/blob/master/src/example.yam) of this file for example.
+Or next pages...
+
+[page]
+
+# Reasons
+
+* HTML is such a noise language and i wanted to concentrate on the content.
+* Design such be the same on all pages and presentations and it should be easy exchangeable
+* ...
+
+[subtitle]
+
+# Markdown
+
+## Works with YamYam
+
+see [sokra/YamYam](http://github.com/sokra/YamYam)
+
+[page]
+
+# Basic Syntax
+
+## Headlines and Text
+
+```
+# Page Headline
+
+## Subheadline
+with a subtext
+
+### Subsubheadline
+
+Start of paragraph
+Some *accented* text. And _more_ of **this** __cool accents__.
+End of paragraph
+
+Next paragraph
+
+* list item
+ * *light accented item*
+ * __strong accented item__
+* `code item`
+```
+
+See this in action on next page...
+
+[page]
+
+# Page Headline
+
+## Subheadline
+with a subtext
+
+### Subsubheadline
+
+Start of paragraph
+Some *accented* text. And _more_ of **this** __cool accents__.
+End of paragraph
+
+Next paragraph
+
+* list item
+ * *light accented item*
+ * __strong accented item__
+* `code item`
+
+[page]
+
+# Page Structure
+
+```
+[@settings template="basic" output="<output file name>"]
+[@settings author="<Your Name>" date="<Your Date>" copyright="<Your Copyright>"]
+[@settings title="<Your Title>"]
+[title]
+
+... The first slide
+
+[subtitle]
+
+... A title slide
+
+[page]
+
+... A simple slide
+
+[page]
+
+... Another simple slide
+
+[end]
+
+... Thanks for...
+```
+
+[page]
+
+# Customizing
+
+If you want to make your own template, simply copy `basic.dust.html` and the `basic` folder in `templates/` and rename the copies.
+In your markdown file you can specify your own template.
+
+The template is really short and should be easy to understand and extend.
+
+Feel free to modify the files to your needs.
+
+## Contribute
+
+If you want to contribute your template to the community, feel free to send it as pull request.
+
+[page]
+
+# Advanced
+
+## Animations
+
+There is support for custom animation
+
+```
+[@jmpress animation="fade"]
+Delayed Text
+
+[@jmpress animation="drive-right after 1s"]
+Delayed Text2
+```
+
+[@right]
+```
+[@right]
+Floating Content
+```
+Floating Content
+
+[@jmpress animation="fade"]
+Delayed Text
+
+[@jmpress animation="drive-right after 1s"]
+Delayed Text2
+
+And custom attributes
+
+```
+[@attrs style="color: red"]
+Red text
+```
+
+[@attrs style="color: red"]
+Red text
+
+[end]
+
+# Thanks!
+
+
+
+
+
+
+
+
+

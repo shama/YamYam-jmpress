@@ -1,0 +1,30 @@
+!!! html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title= settings.title
+
+		link(href="../templates/#{settings.template}/style.css", rel="stylesheet", type="text/css")
+		link(href="../templates/#{settings.template}/basic-animations.min.css", rel="stylesheet", type="text/css")
+
+		script(type="text/javascript", src="../templates/#{settings.template}/jquery.min.js")
+		script(type="text/javascript", src="../templates/#{settings.template}/jmpress.all.js")
+		script(type="text/javascript", src="../templates/#{settings.template}/script.js")
+
+	body
+		div#jmpress(data-template="main")
+			each section, pagenumber in sections
+				section(class=section.class, data-template=section.template)
+					footer
+						table
+							tr
+								td
+									| #{settings.title}
+									br
+									| #{settings.date}
+								td
+									| #{settings.copyright}
+									br
+									| #{settings.author}
+								td= pagenumber + 1
+					| !{section.content}
