@@ -1,5 +1,5 @@
 [@settings template="basic" output="example"]
-[@settings author="Tobias Koppers" date="2012/02/27" copyright="MIT Licence"]
+[@settings author="Tobias Koppers" date="2012/02/27" copyright="MIT License"]
 [@settings title="Example presentation"]
 [title]
 
@@ -8,7 +8,7 @@ for [jmpress.js](http://shama.github.com/jmpress.js) with [YamYam](http://sokra.
 
 Have fun using it!
 
-Note: If you are new to jmpress.js presentations: Try to nativgate with arrow keys or spacebar.
+Note: If you are new to jmpress.js presentations: Try to navigate with arrow keys or spacebar.
 
 [subtitle]
 
@@ -31,8 +31,8 @@ Or next pages...
 
 # Reasons
 
-* HTML is such a noise language and i wanted to concentrate on the content.
-* Design such be the same on all pages and presentations and it should be easy exchangeable
+* HTML is such a noisy language and I wanted to concentrate on the content.
+* Design can be the same on all pages and presentations. It should be easy exchangeable.
 * ...
 
 [subtitle]
